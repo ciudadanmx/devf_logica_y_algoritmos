@@ -4,7 +4,7 @@ import { calcularAreaCirculo } from "./figuras.js";
 
 console.log(edad1); // Las variables var automáticamente se declaran hasta arriba del código.
 // console.log(letEdad); // Las variables let NO se mueven hasta arriba del código.
-//a
+
 let letEdad = 26;
 
 var edad1; // Declarando una variable.
@@ -17,7 +17,7 @@ var edad1 = 26; // Declarando y asignado una variable. Es posible redeclarar una
 /*
     1. Cuando estamos seguros que un valor no va a cambiar durante toda nuestra aplicación.
     2. Cuando utilizamos el valor una única vez.
-    3. Cuando asignamos una función flecha...aaa
+    3. Cuando asignamos una función flecha.
 */
 
 
