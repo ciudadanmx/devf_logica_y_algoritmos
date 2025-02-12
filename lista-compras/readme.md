@@ -88,4 +88,4 @@ Conclusión
 Este proyecto permite a los estudiantes familiarizarse con el uso de arreglos y la manipulación de datos en JavaScript de una manera práctica y visual. Además, proporciona una base para implementar soluciones más complejas utilizando estructuras de datos más avanzadas.
 
 License
-Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
+Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para más detalles..
