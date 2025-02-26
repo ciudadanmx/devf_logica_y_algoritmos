@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Complejidad Big-O - Práctica DevF</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+        }
+
+        input {
+            width: 50px;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        button {
+            background: #ffea00;
+            color: #000;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: 0.3s ease-in-out;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #000;
+            color: #ffea00;
+            transform: scale(1.1);
+        }
+
+        #resultado {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+    <script defer src="complejidad.js"></script>
+</head>
+<body>
+
+
+    <h2>📊 Calculador de Complejidad Big-O.</h2>
+    <p>Ingresa el número de iteraciones y anidaciones de tu algoritmo para estimar su complejidad.</p>
+
+    <div class="container">
+        <label>Iteraciones principales (n):</label>
+        <input type="number" id="n" min="1" value="1">
+        <br>
+        <label>Bucles anidados (exponente):</label>
+        <input type="number" id="exponente" min="0" value="0">
+        <br>
+        <button onclick="calcularComplejidad()">Calcular Complejidad</button>
+        <p id="resultado"></p>
+    </div>
+
+    <div class="explicacion">
+        <h3>🔍 ¿Qué significa la complejidad calculada?</h3>
+        <p><strong>O(1) → Complejidad Constante:</strong> El tiempo de ejecución no cambia sin importar el tamaño de la entrada.</p>
+        <p><strong>O(n) → Complejidad Lineal:</strong> El tiempo de ejecución crece proporcionalmente con el tamaño de la entrada.</p>
+        <p><strong>O(n²) → Complejidad Cuadrática:</strong> El tiempo de ejecución crece exponencialmente cuando aumentan los datos.</p>
+        <p><strong>O(n^k) → Complejidad Exponencial:</strong> Se vuelve extremadamente costosa a medida que crece la entrada.</p>
+        <p><strong>O(log n) → Complejidad Logarítmica:</strong> Crece de manera más lenta, típica en algoritmos eficientes como la búsqueda binaria.</p>
+    </div>
+
+</body>
+</html>
